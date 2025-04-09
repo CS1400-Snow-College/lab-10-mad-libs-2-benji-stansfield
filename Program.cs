@@ -27,8 +27,41 @@ class Program
         string story = File.ReadAllText("story1.txt") + File.ReadAllText("story2.txt");
 
         string[] storyWords = story.Split(' '); //splits the story into separate words
-
         List<string> generatedWords = new List<string>(); //this list will contain all of the words the story generates
+
+        foreach(string word in storyWords)
+        {
+            if(word.Contains("::"))
+            {
+                if(word.Contains("adjective"))
+                {
+                    string randomWord = adjective[rand.Next(adjective.Count)];
+                    generatedWords.Add(randomWord);
+                }
+                if(word.Contains("noun"))
+                {
+                    string randomWord = noun[rand.Next(noun.Count)];
+                    generatedWords.Add(randomWord);
+                }
+                if(word.Contains("plural-noun"))
+                {
+                    string randomWord = pluralNoun[rand.Next(pluralNoun.Count)];
+                    generatedWords.Add(randomWord);
+                }
+                if(word.Contains("past-tense-verb"))
+                {
+                    string randomWord = pastTenseVerb[rand.Next(pastTenseVerb.Count)];
+                    generatedWords.Add(randomWord);
+                }
+                if(word.Contains("verb"))
+                {
+                    string randomWord = verb[rand.Next(verb.Count)];
+                    generatedWords.Add(randomWord);
+                }
+            }
+            else
+                generatedWords.Add(word);
+        }
     }
 }
 
