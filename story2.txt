@@ -1,5 +1,5 @@
 Once upon a time, there was a curious::adjective girl who built a treehouse::noun in her backyard. She dreamed of discovering a hidden 
 treasure::noun, so she made a map::noun and invited her friends::plural-noun to join the adventure. They searched high and low, 
-climbed::past-tense-verb trees, and dug::past-tense-verb holes in the ground.On the third day, they stumbled upon a mysterious::adjective 
+climbed::past-tense-verb trees, and dug::past-tense-verb holes in the ground. On the third day, they stumbled upon a mysterious::adjective 
 cave::noun filled with sparkling::adjective gems::plural-noun. But just as they reached for them, a loud::adjective noise::noun scared them away. 
 They ran::past-tense-verb all the way home and promised never to enter the cave again.

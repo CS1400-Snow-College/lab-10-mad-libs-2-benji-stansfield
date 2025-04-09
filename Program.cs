@@ -36,30 +36,50 @@ class Program
                 if(word.Contains("adjective"))
                 {
                     string randomWord = adjective[rand.Next(adjective.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("plural-noun"))
                 {
                     string randomWord = pluralNoun[rand.Next(pluralNoun.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("noun"))
                 {
                     string randomWord = noun[rand.Next(noun.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("past-tense-verb"))
                 {
                     string randomWord = pastTenseVerb[rand.Next(pastTenseVerb.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("verb"))
                 {
                     string randomWord = verb[rand.Next(verb.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords.Add(randomWord);
                     continue;
                 }
@@ -83,31 +103,51 @@ class Program
                 if(word.Contains("adjective"))
                 {
                     string randomWord = adjective[rand.Next(adjective.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords2.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("noun"))
                 {
                     string randomWord = noun[rand.Next(noun.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords2.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("plural-noun"))
                 {
                     string randomWord = pluralNoun[rand.Next(pluralNoun.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords2.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("past-tense-verb"))
                 {
                     string randomWord = pastTenseVerb[rand.Next(pastTenseVerb.Count)];
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';                    
                     generatedWords2.Add(randomWord);
                     continue;
                 }
                 if(word.Contains("verb"))
                 {
                     string randomWord = verb[rand.Next(verb.Count)];
-                    generatedWords2.Add(randomWord);
+                    if(word.Contains('.'))
+                        randomWord = randomWord + '.';
+                    if (word.Contains(','))
+                        randomWord = randomWord + ',';
+                    generatedWords2.Add(randomWord);                        
                     continue;
                 }
             }
