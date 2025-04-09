@@ -37,26 +37,31 @@ class Program
                 {
                     string randomWord = adjective[rand.Next(adjective.Count)];
                     generatedWords.Add(randomWord);
-                }
-                if(word.Contains("noun"))
-                {
-                    string randomWord = noun[rand.Next(noun.Count)];
-                    generatedWords.Add(randomWord);
+                    continue;
                 }
                 if(word.Contains("plural-noun"))
                 {
                     string randomWord = pluralNoun[rand.Next(pluralNoun.Count)];
                     generatedWords.Add(randomWord);
+                    continue;
+                }
+                if(word.Contains("noun"))
+                {
+                    string randomWord = noun[rand.Next(noun.Count)];
+                    generatedWords.Add(randomWord);
+                    continue;
                 }
                 if(word.Contains("past-tense-verb"))
                 {
                     string randomWord = pastTenseVerb[rand.Next(pastTenseVerb.Count)];
                     generatedWords.Add(randomWord);
+                    continue;
                 }
                 if(word.Contains("verb"))
                 {
                     string randomWord = verb[rand.Next(verb.Count)];
                     generatedWords.Add(randomWord);
+                    continue;
                 }
             }
             else
@@ -79,26 +84,31 @@ class Program
                 {
                     string randomWord = adjective[rand.Next(adjective.Count)];
                     generatedWords2.Add(randomWord);
+                    continue;
                 }
                 if(word.Contains("noun"))
                 {
                     string randomWord = noun[rand.Next(noun.Count)];
                     generatedWords2.Add(randomWord);
+                    continue;
                 }
                 if(word.Contains("plural-noun"))
                 {
                     string randomWord = pluralNoun[rand.Next(pluralNoun.Count)];
                     generatedWords2.Add(randomWord);
+                    continue;
                 }
                 if(word.Contains("past-tense-verb"))
                 {
                     string randomWord = pastTenseVerb[rand.Next(pastTenseVerb.Count)];
                     generatedWords2.Add(randomWord);
+                    continue;
                 }
                 if(word.Contains("verb"))
                 {
                     string randomWord = verb[rand.Next(verb.Count)];
                     generatedWords2.Add(randomWord);
+                    continue;
                 }
             }
             else

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lab-10-mad-libs-2-benji-stansfield")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ecf974ded5ceb259352eeebcc2e77324a7025b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+819dcabaa4d116c49bb637bd5de1711e22a4f78d")]
 [assembly: System.Reflection.AssemblyProductAttribute("lab-10-mad-libs-2-benji-stansfield")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lab-10-mad-libs-2-benji-stansfield")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
