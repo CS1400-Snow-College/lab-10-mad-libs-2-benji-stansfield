@@ -24,14 +24,14 @@ class Program
         Random rand = new Random();
 
         /*Read the files*/
-        string story = File.ReadAllText("story1.txt") + File.ReadAllText("story2.txt");
+        string story1 = File.ReadAllText("story1.txt");
 
-        string[] storyWords = story.Split(' '); //splits the story into separate words
+        string[] storyWords = story1.Split(' '); //splits the story into separate words
         List<string> generatedWords = new List<string>(); //this list will contain all of the words the story generates
 
         foreach(string word in storyWords)
         {
-            if(word.Contains("::"))
+            if(word.Contains("::")) //focuses on the words in story that we need to replace
             {
                 if(word.Contains("adjective"))
                 {
@@ -60,10 +60,51 @@ class Program
                 }
             }
             else
-                generatedWords.Add(word);
+                generatedWords.Add(word); //adds the unreplaced word to the list
         }
+
+        File.WriteAllText("generated.story1.txt", String.Join(" ", generatedWords));
+
+        /*Repeat process for story 2*/
+        string story2 = File.ReadAllText("story2.txt");
+
+        string[] storyWords2 = story2.Split(' '); //splits the story into separate words
+        List<string> generatedWords2 = new List<string>(); //this list will contain all of the words the story generates
+
+        foreach(string word in storyWords2)
+        {
+            if(word.Contains("::")) //focuses on the words in story that we need to replace
+            {
+                if(word.Contains("adjective"))
+                {
+                    string randomWord = adjective[rand.Next(adjective.Count)];
+                    generatedWords2.Add(randomWord);
+                }
+                if(word.Contains("noun"))
+                {
+                    string randomWord = noun[rand.Next(noun.Count)];
+                    generatedWords2.Add(randomWord);
+                }
+                if(word.Contains("plural-noun"))
+                {
+                    string randomWord = pluralNoun[rand.Next(pluralNoun.Count)];
+                    generatedWords2.Add(randomWord);
+                }
+                if(word.Contains("past-tense-verb"))
+                {
+                    string randomWord = pastTenseVerb[rand.Next(pastTenseVerb.Count)];
+                    generatedWords2.Add(randomWord);
+                }
+                if(word.Contains("verb"))
+                {
+                    string randomWord = verb[rand.Next(verb.Count)];
+                    generatedWords2.Add(randomWord);
+                }
+            }
+            else
+                generatedWords2.Add(word); //adds the unreplaced word to the list
+        }
+
+        File.WriteAllText("generated.story2.txt", String.Join(" ", generatedWords2));
     }
 }
-
-
-/*read the files in, split the words, replace all the words containing '::' with ones from the Lists, join words back together and write new files*/
